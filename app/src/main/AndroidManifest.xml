@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Quiz"></activity>
+        <activity android:name=".Quiz_resultcard_screen"></activity>
+        <activity android:name=".Quiz_question_screen" />
+        <activity android:name=".QuizMainScreen" />
+        <activity android:name=".Quiz" />
         <activity android:name=".Calculator" />
         <activity android:name=".MainActivity">
             <intent-filter>
