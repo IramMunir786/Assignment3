@@ -17,6 +17,9 @@ import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class Quiz_question_screen extends AppCompatActivity {
@@ -159,22 +162,37 @@ public class Quiz_question_screen extends AppCompatActivity {
 
         RadioButton rb1=findViewById(R.id.rb1);
         int i2=i1*4;
-        rb1.setText(array2[i2]);
+        String ans1=array2[i2];
+        i2=i2+1;
+        String ans2=array2[i2];
+        i2=i2+1;
+        String ans3=array2[i2];
+        i2=i2+1;
+        String ans4=array2[i2];
+
+        String[] ans=new String[]{ans1,ans2,ans3,ans4};
+        List<String> intList = Arrays.asList(ans);
+
+        Collections.shuffle(intList);
+
+
+
+        rb1.setText(intList.get(0));
         rb1.setChecked(false);
 
         RadioButton rb2=findViewById(R.id.rb2);
-        i2=i2+1;
-        rb2.setText(array2[i2]);
+
+        rb2.setText(intList.get(1));
         rb2.setChecked(false);
 
         RadioButton rb3=findViewById(R.id.rb3);
-        i2=i2+1;
-        rb3.setText(array2[i2]);
+
+        rb3.setText(intList.get(2));
         rb3.setChecked(false);
 
         RadioButton rb4=findViewById(R.id.rb4);
-        i2=i2+1;
-        rb4.setText(array2[i2]);
+
+        rb4.setText(intList.get(3));
         rb4.setChecked(false);
 
         return i1;
