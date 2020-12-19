@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="2 in 1 Apps">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_calculator"
+                    android:icon="@drawable/ic_calculator"
+                    android:title="Calculator" />
+                <item
+                    android:id="@+id/nav_quiz"
+                    android:icon="@drawable/ic_quiz"
+                    android:title="General Knowledge Quiz" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Follow us">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/invite"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Invite Friends" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/privacy_policy"
+                    android:icon="@drawable/ic_baseline_remove_red_eye_24"
+                    android:title="Privacy policy" />
+                <item
+                    android:id="@+id/terms"
+                    android:icon="@drawable/ic_term"
+                    android:title="Terms" />
+
+                <item
+                    android:id="@+id/Acknoelwdge"
+                    android:icon="@drawable/ic_acknoeledge"
+                    android:title="Acknowledge" />
+            </group>
+        </menu>
+    </item>
+</menu>
