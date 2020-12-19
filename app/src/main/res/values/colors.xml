@@ -13,4 +13,7 @@
     <color name="color_btn">#6200EE</color>
     <color name="grey">#F6F6F6</color>
     <color name="text">#AF1CE6</color>
+    <color name="colorBackground">#191919</color>
+    <color name="buttonBackground">#323232</color>
+    <color name="buttonText">#ff4500</color>
 </resources>
